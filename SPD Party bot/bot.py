@@ -546,7 +546,7 @@ def lang_for_guild(guild_id: Optional[int]) -> str:
 
 def tr(guild_id: Optional[int], key: str, **kwargs) -> str:
     lang = lang_for_guild(guild_id)
-    text = I18N.get(lang, I18N["pt-BR"]).get(key, I18N["pt-BR"].get(key, key))
+    text = I18N.get(lang, I18N["en-US"]).get(key, I18N["en-US"].get(key, key))
     try:
         return text.format(**kwargs)
     except Exception:

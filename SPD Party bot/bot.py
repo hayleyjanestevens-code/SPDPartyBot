@@ -3021,7 +3021,7 @@ async def party_hub(interaction: discord.Interaction):
         return
 
     await interaction.response.send_message(tr(guild_id, "hub_created", url=message.jump_url), ephemeral=True)
-    await log_action(interaction.guild, f"🧩 <@{member.id}> criou o Hub de Parties em {interaction.channel.mention}.")
+    await log_action(interaction.guild, f"🧩 <@{member.id}> created the Party Hub in {interaction.channel.mention}.")
 
 
 @party_group.command(name="config", description="Abre o painel de configuração do Party Bot neste servidor.")

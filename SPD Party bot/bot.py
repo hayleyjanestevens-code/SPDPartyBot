@@ -1582,7 +1582,7 @@ class PartyView(discord.ui.View):
         if len(data["accepted"]) < capacity:
             data["accepted"].append(user_id)
             msg = tr(guild_id, "marked_going")
-            log_msg = f"✅ <@{user_id}> marcou Vou na party **{data['title']}** `{party_id}`."
+            log_msg = f"✅ <@{user_id}> marked Going to the party **{data['title']}** `{party_id}`."
             give_voice_role = True
         else:
             data["queue"].append(user_id)

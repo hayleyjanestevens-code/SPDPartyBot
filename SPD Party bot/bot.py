@@ -2689,7 +2689,7 @@ async def create_party_voice_resources(party_id: str, data: Dict[str, Any], anno
 
         if announce:
             await send_party_channel_message(data, tr(guild_id, "voice_create_failed"))
-        await log_action(guild, f"⚠️ Falha ao criar call/cargo da party **{data.get('title', 'Party')}** `{party_id}`.")
+        await log_action(guild, f"⚠️ Failed to create the voice channel/role for party **{data.get('title', 'Party')}** `{party_id}`.")
         return False
 
 

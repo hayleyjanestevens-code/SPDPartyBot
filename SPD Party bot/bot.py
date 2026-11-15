@@ -3044,7 +3044,7 @@ async def party_config(interaction: discord.Interaction):
     )
 
 
-@party_group.command(name="lista", description="Lista parties abertas deste servidor.")
+@party_group.command(name="list", description="Lists open parties on this server.")
 async def party_lista(interaction: discord.Interaction):
     guild_id = guild_id_from_interaction(interaction)
     open_parties = [
@@ -3072,7 +3072,7 @@ async def party_lista(interaction: discord.Interaction):
     await interaction.response.send_message("\n".join(lines), ephemeral=True)
 
 
-@party_group.command(name="limpar", description="Remove do banco as parties encerradas deste servidor.")
+@party_group.command(name="clear", description="Remove closed parties from this server's database.")
 async def party_limpar(interaction: discord.Interaction):
     member = interaction.user
     guild_id = guild_id_from_interaction(interaction)

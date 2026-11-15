@@ -33,7 +33,7 @@ DEFAULT_GUILD_CONFIG = {
     "embed_color": 16766720,
     "everyone_can_create": False,
     "ping_everyone": True,
-    "language": "pt-BR",
+    "language":"en-US" ,
     "timezone_offset_minutes": -180,  # UTC-3 por padrão
     "auto_close_enabled": True,
     "auto_close_after_hours": 6,

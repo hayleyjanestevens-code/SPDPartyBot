@@ -539,9 +539,9 @@ I18N = {
 
 def lang_for_guild(guild_id: Optional[int]) -> str:
     if not guild_id:
-        return "pt-BR"
-    value = get_guild_config(guild_id).get("language", "pt-BR")
-    return value if value in I18N else "pt-BR"
+        return "en-US"
+    value = get_guild_config(guild_id).get("language", "en-US")
+    return value if value in I18N else "en-US"
 
 
 def tr(guild_id: Optional[int], key: str, **kwargs) -> str:
